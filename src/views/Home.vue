@@ -23,16 +23,26 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Contact Us</h1>
-          <form>
+          <form name="contact" method="POST" data-netlify="true">
             <!-- Name input -->
             <div class="form-outline mb-4">
-              <input type="text" id="form4Example1" class="form-control" />
+              <input
+                type="text"
+                name="name"
+                id="form4Example1"
+                class="form-control"
+              />
               <label class="form-label" for="form4Example1">Name</label>
             </div>
 
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
+              <input
+                type="email"
+                name="email"
+                id="form4Example2"
+                class="form-control"
+              />
               <label class="form-label" for="form4Example2"
                 >Email address</label
               >
@@ -43,7 +53,8 @@
               <textarea
                 class="form-control"
                 id="form4Example3"
-                rows="4"
+                name="message"
+                rows="7"
               ></textarea>
               <label class="form-label" for="form4Example3">Message</label>
             </div>
